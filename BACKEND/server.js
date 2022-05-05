@@ -31,3 +31,25 @@ connection.once("open", () => {
 app.listen(PORT, ()=>{
     console.log('Server is up and running on port number: ',PORT)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import payments routes
+const paymentRoutes = require("./routes/Payments_h");
+//import payment route middleware
+app.use(paymentRoutes);
