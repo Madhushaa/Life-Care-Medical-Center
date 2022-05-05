@@ -136,7 +136,7 @@ class PrintPDF extends React.Component {
             <br></br>
             <br></br>
           <ReactToPrint
-            trigger={() => <button className='btn btn-primary' style={{marginLeft:1400}}>Generate Report</button>}
+            trigger={() => <button className='btn btn-primary' style={{marginLeft:'85%',marginTop:'5px'}}>Generate Report</button>}
             content={() => this.componentRef}/>
           <LabReport_c ref={(el) => (this.componentRef = el)} />
         </div>

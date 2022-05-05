@@ -181,7 +181,7 @@ export default class EditLab_c extends Component {
 
     render() {
         return(
-            <div  style={{backgroundImage:"url(http://localhost:3000/homeImage/bglab1.jpg)",backgroundSize:'cover',height:'1300px',backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center',backgroundAttachment:'fixed'}} >
+            <div  style={{backgroundImage:"url(http://localhost:3000/labImage/bglab1.jpg)",backgroundSize:'cover',height:'1300px',backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center',backgroundAttachment:'fixed'}} >
             <div>
             <br></br>
             <Link to="/labs" className="results">
