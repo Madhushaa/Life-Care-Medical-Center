@@ -31,3 +31,14 @@ connection.once("open", () => {
 app.listen(PORT, ()=>{
     console.log('Server is up and running on port number: ',PORT)
 })
+
+
+
+
+
+
+
+//import staff route
+const staffRouter = require("./routes/staffmembers_t.js");
+//import staff middleware
+app.use("/staff",staffRouter);
