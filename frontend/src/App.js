@@ -15,6 +15,7 @@ import './appointment.css'
 
 
 
+
 //Lab Tests
 import AddLab_c from './components/AddLab_c';
 import ViewLabs_c from './components/ViewLabs_c';
@@ -33,12 +34,12 @@ import './payment_h.css'
 
 
 //Staff
-
-
-
-
-
-
+import AddStaff from "./components/AddStaff_t"
+import ViewStaff from "./components/ViewStaff_t"
+import StaffDash from "./components/StaffDashboard_t"
+import Update from './components/UpdateStaff_t'
+import StaffReport from './components/StaffReport_t'
+import './staff_t.css';
 
 
 export default class App extends Component{
@@ -71,13 +72,12 @@ export default class App extends Component{
         <Route path="/payment" exact component ={payment_h}></Route>
         <Route path="/payUpdate/:id" exact component={updatePayment}></Route>
         <Route path="/paymentreport" exact component ={ExamplePayment}></Route>
-
-
-
-
-
-
-
+        {/*Staff*/}
+        <Route path="/add" exactc component={AddStaff}/>
+        <Route path="/view" exact component={ViewStaff}/>
+        <Route path="/staffdash" exactc component={StaffDash}/>
+        <Route path="/update/:id" exact component={Update}/>
+        <Route path="/report" exactc component={StaffReport}/>
       </div>
 
       <Footer/>

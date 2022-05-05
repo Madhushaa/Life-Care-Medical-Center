@@ -48,3 +48,8 @@ app.use(labRoutes);
 const paymentRoutes = require("./routes/Payments_h");
 //import payment route middleware
 app.use(paymentRoutes);
+
+//import staff route
+const staffRouter = require("./routes/staffmembers_t.js");
+//import staff middleware
+app.use("/staff",staffRouter);
