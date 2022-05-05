@@ -76,13 +76,13 @@ export default class ViewStaff extends Component {
         console.log("ViewBody");
         return (
 
-            <div className="container"style={{ marginTop: 20,marginLeft:45}}>
+            <div className="container"style={{marginRight:30}}>
 
-                <br></br>   <br></br> 
+                
                 <h2 align="center"><b>Staff List</b></h2>
                 <br></br>
                 <input class="form-control mr-sm-2 searchbar" type="text" placeholder="Search By Name" aria-label="Search" onChange={(e)=>{this.searchStaff(e.target.value)}}style={{marginLeft:3}}/>
-               <hr style={{ width:1230}}></hr>
+               <hr style={{ width:1243}}></hr>
                 <table className="table table-striped" id="stable" style={{ marginTop: 20,marginLeft:3}}>
                 
                     <thead>
@@ -121,6 +121,15 @@ export default class ViewStaff extends Component {
 
                                 <td scope="row"><button className="btn btn-danger far fa-trash-alt" onClick={(e) => this.deleteRow(staffmem._id)}>&nbsp;Delete</button> </td>
                                 
+
+                                
+
+
+
+
+
+
+
                             </tr>
 
                         ))}

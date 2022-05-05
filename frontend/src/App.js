@@ -12,6 +12,7 @@ import Home from "./components/Home";
 
 
 
+
 //Lab Tests
 
 
@@ -30,12 +31,12 @@ import Home from "./components/Home";
 
 
 //Staff
-
-
-
-
-
-
+import AddStaff from "./components/AddStaff_t"
+import ViewStaff from "./components/ViewStaff_t"
+import StaffDash from "./components/StaffDashboard_t"
+import Update from './components/UpdateStaff_t'
+import StaffReport from './components/StaffReport_t'
+import './staff_t.css';
 
 
 export default class App extends Component{
@@ -49,9 +50,36 @@ export default class App extends Component{
         <br></br> 
         <br></br>
 
-        <Route path="/home" exact component={Home}></Route> 
-        
-         
+    <Route path="/home" exact component={Home}></Route> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/*Staff*/}
+        <Route path="/add" exactc component={AddStaff}/>
+        <Route path="/view" exact component={ViewStaff}/>
+        <Route path="/staffdash" exactc component={StaffDash}/>
+        <Route path="/update/:id" exact component={Update}/>
+        <Route path="/report" exactc component={StaffReport}/>
+          
       </div>
 
       <Footer/>
