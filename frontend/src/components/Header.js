@@ -23,7 +23,7 @@ class Header extends Component {
             
 
         </div>
-        <i class="fa fa-user fa-2x" aria-hidden="true" style={{marginLeft:1700}}> </i> &nbsp;&nbsp;
+        <i class="fa fa-user fa-2x" aria-hidden="true" style={{marginLeft:1500}}> </i> &nbsp;&nbsp;
         <button type="button" class="btn btn-light" style={{marginBottom:20}}> Login </button>
 
      
