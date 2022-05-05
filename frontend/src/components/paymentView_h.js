@@ -61,7 +61,7 @@ export default class paymentView_h extends Component{
   render(){
      return(
          <div>
-             <h1 style={{textAlign:"center" ,marginBottom:40}}> <b>Pyament Details</b> </h1>
+             <h1 style={{textAlign:"center" ,marginBottom:40}}> <b>Payment Details</b> </h1>
 
 
              <input type="search" className="myInput" 
