@@ -46,7 +46,7 @@ class Header extends Component {
 
 
                        <li class="nav-item">
-                           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <a class="nav-link" href="/labDashboard">
                           <b> Lab Tests</b></a>
                           
                        </li>
@@ -54,13 +54,13 @@ class Header extends Component {
 
 
                        <li class="nav-item">
-                                   <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   <a class="nav-link" href="/payment">
                                       <b> Payment </b>
                                    </a>
                                    </li>
                      
                        <li class="nav-item">
-                           <a class="nav-link" href="#"> <b>Staff</b> </a>
+                           <a class="nav-link" href="/staffdash"> <b>Staff</b> </a>
                        </li>
                     
                       

@@ -6,11 +6,12 @@ import Header from './components/Header';
 import Home from "./components/Home";
 
 //Appointments
-
-
-
-
-
+import ViewAppointments from './components/ViewAppointments';
+import Appointments from './components/Appointments';
+import AddAppointments from './components/AddAppointments';
+import ComponentToPrint, { Example } from './components/AppointmentsReport';
+import UpdateAppointments from './components/UpdateAppointments'
+import './appointment.css'
 
 //Lab Tests
 
@@ -49,9 +50,36 @@ export default class App extends Component{
         <br></br> 
         <br></br>
 
-        <Route path="/home" exact component={Home}></Route> 
+    <Route path="/home" exact component={Home}></Route> 
+
+        {/* Appointments */}
+        <Route path = "/viewAppointments" exactc component={ViewAppointments}></Route>  
+        <Route path = "/Appointments" exactc component={Appointments}></Route>
+        <Route path = "/addAppointments" exactc component={AddAppointments}></Route> 
+        <Route path= "/updateAppointments/:id" exact component={UpdateAppointments}></Route>
+        <Route path="/appointmentReport" exact component={Example }/>
         
-         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
 
       <Footer/>
@@ -62,4 +90,4 @@ export default class App extends Component{
   
 }
 
-  
+
