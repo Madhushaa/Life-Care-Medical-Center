@@ -106,7 +106,7 @@ class Example extends React.PureComponent {
     
                 {({ handlePrint }) => (
     
-                  <button className="buttond" style={{ marginLeft:1070,marginTop:'20px',marginBottom:'0px'}} onClick={handlePrint}>Download</button>
+                  <button className="buttond" style={{ marginLeft:1070,marginBottom:'0px'}} onClick={handlePrint}>Download</button>
     
                 )}
     
@@ -122,7 +122,7 @@ class Example extends React.PureComponent {
         
     }
 }
-<br></br> 
+
    
 
 export default Example;
