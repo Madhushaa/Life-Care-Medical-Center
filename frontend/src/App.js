@@ -6,11 +6,12 @@ import Header from './components/Header';
 import Home from "./components/Home";
 
 //Appointments
-
-
-
-
-
+import ViewAppointments from './components/ViewAppointments';
+import Appointments from './components/Appointments';
+import AddAppointments from './components/AddAppointments';
+import ComponentToPrint, { Example } from './components/AppointmentsReport';
+import UpdateAppointments from './components/UpdateAppointments'
+import './appointment.css'
 
 
 //Lab Tests
@@ -51,22 +52,19 @@ export default class App extends Component{
         <br></br>
 
     <Route path="/home" exact component={Home}></Route> 
-
-
-
-
-
-
-
-
-      {/*lab test */}
+      {/* Appointments */}
+        <Route path = "/viewAppointments" exactc component={ViewAppointments}></Route>  
+        <Route path = "/Appointments" exactc component={Appointments}></Route>
+        <Route path = "/addAppointments" exactc component={AddAppointments}></Route> 
+        <Route path= "/updateAppointments/:id" exact component={UpdateAppointments}></Route>
+        <Route path="/appointmentReport" exact component={Example }/>
+           {/*lab test */}
       <Route path="/labs" exact component={ViewLabs_c}/>
       <Route path="/save" exact component={AddLab_c}/>
       <Route path="/editLab/:id" exact component={EditLab_c}/>
       <Route path="/labDashboard" exact component={labDashboard}/>
       <Route path="/PrintLabReport" exact component={LabReport_c}/>
-        
-         
+
 
 
 
@@ -90,4 +88,4 @@ export default class App extends Component{
   
 }
 
-  
+
