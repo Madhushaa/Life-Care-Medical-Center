@@ -14,6 +14,7 @@ import UpdateAppointments from './components/UpdateAppointments'
 import './appointment.css'
 
 
+
 //Lab Tests
 import AddLab_c from './components/AddLab_c';
 import ViewLabs_c from './components/ViewLabs_c';
@@ -23,12 +24,12 @@ import LabReport_c from './components/LabReport_c';
 import './lab_c.css';
 
 //Payment
-
-
-
-
-
-
+import paymentView_h from "./components/paymentView_h";
+import paymentAdd_h from "./components/paymetAdd_h";
+import payment_h from "./components/payment_h";
+import ExamplePayment from "./components/paymentReport";
+import updatePayment from "./components/updatePayment";
+import './payment_h.css'
 
 
 //Staff
@@ -50,7 +51,6 @@ export default class App extends Component{
         <br></br>
         <br></br> 
         <br></br>
-
     <Route path="/home" exact component={Home}></Route> 
       {/* Appointments */}
         <Route path = "/viewAppointments" exactc component={ViewAppointments}></Route>  
@@ -63,14 +63,14 @@ export default class App extends Component{
       <Route path="/save" exact component={AddLab_c}/>
       <Route path="/editLab/:id" exact component={EditLab_c}/>
       <Route path="/labDashboard" exact component={labDashboard}/>
-      <Route path="/PrintLabReport" exact component={LabReport_c}/>
+      <Route path="/PrintLabReport" exact component={LabReport_c}/>      
 
-
-
-
-
-
-
+              {/* Payment Routes */}
+        <Route path="/viewpayment" exact component ={paymentView_h}></Route>
+        <Route path="/payadd" exact component ={paymentAdd_h}></Route>
+        <Route path="/payment" exact component ={payment_h}></Route>
+        <Route path="/payUpdate/:id" exact component={updatePayment}></Route>
+        <Route path="/paymentreport" exact component ={ExamplePayment}></Route>
 
 
 
