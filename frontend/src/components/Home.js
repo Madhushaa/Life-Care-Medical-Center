@@ -20,7 +20,7 @@ class Home extends Component {
                 </Link>
             </div>
             <div className="col">
-                
+                 
                
                     <Link to="/labDashboard" className="results">   
                     <img src="/homeImage/lab3.png" width="240" height="240" alt="" /><br></br><br></br>
@@ -33,7 +33,7 @@ class Home extends Component {
         <br></br><br></br><br></br>
             <div className="col" style={{marginLeft:200}} >
             <Link to="/payment" className="schedule">
-                
+
                     <img src="/homeImage/payment1.jpg" width="240" height="240" alt=""/><br></br><br></br>
                   <button className="btn btn-info" style={{marginLeft:60}}> <h4>Payment</h4></button>
               
@@ -41,7 +41,7 @@ class Home extends Component {
             </div>
             <div className="col" >
             <Link to="/staffdash" className="report">
-                
+
                     <img src="/homeImage/staff6.jpg" width="240" height="240"  alt=""/><br></br><br></br>
                     <button className="btn btn-info" style={{marginLeft:60}}><h4> Staff </h4></button>
               

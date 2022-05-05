@@ -37,3 +37,10 @@ const Appointments = require("./routes/appointments");
 
 //route Appointments middleware
 app.use("/Appointments",Appointments);
+
+//import lab routes
+const labRoutes = require('./routes/labs_c');
+
+//lab route middleware
+app.use(labRoutes);
+
