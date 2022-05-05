@@ -31,3 +31,20 @@ connection.once("open", () => {
 app.listen(PORT, ()=>{
     console.log('Server is up and running on port number: ',PORT)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+//import lab routes
+const labRoutes = require('./routes/labs_c');
+
+//lab route middleware
+app.use(labRoutes);
