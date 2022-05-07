@@ -161,7 +161,7 @@ render(){
                         <div className="col-auto">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender" id="Male" 
-                                    value={this.state.gender} checked={this.state.gender == 'Male'}
+                                    value={this.state.gender} checked={this.state.gender === 'Male'}
                                     onChange={this.handleInputChange}/>
                                 <label class="form-check-label"  for="flexRadioDefault1"> Male </label>
                             </div>
@@ -171,7 +171,7 @@ render(){
                         <div className="col-auto">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender" id="Female" 
-                                    value={this.state.gender} checked={this.state.gender == 'Female'}
+                                    value={this.state.gender} checked={this.state.gender === 'Female'}
                                     onChange={this.handleInputChange} />
                                 <label class="form-check-label"  for="flexRadioDefault1"> Female</label>
                             </div>

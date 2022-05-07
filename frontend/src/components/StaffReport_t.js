@@ -34,7 +34,7 @@ componentDidMount(){
     
     
     
-                <div className="container"style={{ marginTop: 20,marginLeft:88}}>
+                <div className="container"style={{ marginTop: 10,marginLeft:0}}>
     
                    
                     <h2 align="center"><b>Staff Report</b></h2>
@@ -43,7 +43,7 @@ componentDidMount(){
                     <h5 align="left"><b>Total number of Staff Members:{this.state.staff.length}</b></h5>
                     
                    
-                   <hr style={{ width:1120}}></hr>
+                   <hr style={{ width:1269}}></hr>
                     <table className="table table-striped" id="stable" style={{ marginTop: 20,marginLeft:3}}>
                     
                         <thead>
@@ -106,7 +106,7 @@ class Example extends React.PureComponent {
     
                 {({ handlePrint }) => (
     
-                  <button className="buttond" style={{ marginLeft:1070,marginBottom:'0px'}} onClick={handlePrint}>Download</button>
+                  <button className="buttond" style={{ marginLeft:1133}} onClick={handlePrint}>Download</button>
     
                 )}
     

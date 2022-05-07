@@ -41,7 +41,7 @@ export default class viewLabs extends Component {
     //search lab test details
     filterData(labs,searchKey){
     const result = labs.filter((labs)=>
-    labs.name.toLowerCase().includes(searchKey)
+    labs.id.toString().includes(searchKey)
     )
     this.setState({labs:result})
     }
@@ -69,7 +69,7 @@ export default class viewLabs extends Component {
                 <div>
                 <div>
                 <div class="col-md-8">
-                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Enter Patient Name Here" onChange={this.handleSearchArea}/></div>
+                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Enter Patient ID Here" onChange={this.handleSearchArea}/></div>
                 </div>
                 </div>
                 </div>

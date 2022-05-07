@@ -75,21 +75,21 @@ export default class paymentView_h extends Component{
              <table className="table table-striped">
                  <thead>
                     <tr className="table-primary">
-                        <th scope="col">NO </th>
+                        <th scope="col">Payment ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Appointment Type</th>
                         <th scope="col">Doctor Specialization</th>
                         <th scope="col">Labtest Name</th>
-                        <th scope="col">Amount(LKR)</th>
+                        <th style={{width:100 , textAlign:'center'}} scope="col">Amount (LKR)</th>
                         <th scope="col">Date</th>
-                        <th scope="col"> Action </th>
+                        <th style={{textAlign:'center'}}  scope="col"> Action </th>
                     </tr>
                  </thead>
                   <tbody>
                       {this.state.payments.map((payments,index)=>
                       <tr>
-                          <th scope="row" >{index+1}</th>
+                          <th scope="row" style={{width:150}}>{index+1}</th>
                           <td>{payments.pname}</td>
                           <td>{payments.phone}</td>
                           <td  style={{width:200}}>{payments.appoinmentType}</td>
@@ -97,7 +97,7 @@ export default class paymentView_h extends Component{
                           <td  style={{width:200}}>{payments.labtestName}</td>
                           <td>{payments.pamount}</td>
                           <td  style={{width:200}}>{payments.pdate}</td>
-                          <td style={{width:300}}>
+                          <td style={{width:500}}>
                               <a className="btn btn-warning" href={`/payUpdate/${payments._id}`}>
                                   <i className="fas fa-edit"></i>&nbsp;Edit
                               </a>

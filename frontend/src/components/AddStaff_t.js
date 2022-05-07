@@ -176,7 +176,7 @@ export default function AddStaff(){
         <div>
            
             <Link to="/view">
-            <button type="stafflist" class="buttonv"style={{marginLeft:370}}>View Staff List</button>
+            <button type="stafflist" class="buttonv"style={{marginLeft:400}}>View Staff List</button>
             </Link>
         </div>
             

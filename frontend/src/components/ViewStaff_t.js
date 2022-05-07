@@ -76,21 +76,21 @@ export default class ViewStaff extends Component {
         console.log("ViewBody");
         return (
 
-            <div className="container"style={{marginRight:30}}>
+            <div className=""style={{marginRight:5}}>
 
                 
                 <h2 align="center"><b>Staff List</b></h2>
                 <br></br>
                 <input class="form-control mr-sm-2 searchbar" type="text" placeholder="Search By Name" aria-label="Search" onChange={(e)=>{this.searchStaff(e.target.value)}}style={{marginLeft:3}}/>
-               <hr style={{ width:1243}}></hr>
+               <hr style={{ width:1295}}></hr>
                 <table className="table table-striped" id="stable" style={{ marginTop: 20,marginLeft:3}}>
                 
                     <thead>
                         <tr class='table-primary'>
-                            <th scope="col">First Name</th>
+                            <th style={{ width:100}} scope="col">First Name</th>
                             <th scope="col"> Last Name</th>
                             <th scope="col">Address</th>
-                            <th scope="col">Contact Number</th>
+                            <th style={{ width:150}} scope="col">Contact Number</th>
                             <th scope="col">NIC Number</th>
                             <th scope="col">Email</th>
                             <th scope="col">DOB</th>
@@ -117,7 +117,7 @@ export default class ViewStaff extends Component {
                                 <td scope="row"><div>{staffmem.role}</div></td>
                                 <td scope="row"><div>{staffmem.specialization}</div></td>
 
-                                <td scope="row"><Link to={"/update/"+staffmem._id} className="btn btn-warning fas fa-edit">&nbsp;Update</Link> </td>
+                                <td scope="row"><Link to={"/update/"+staffmem._id} className="btn btn-warning far fa-edit">&nbsp;Edit</Link> </td>
 
                                 <td scope="row"><button className="btn btn-danger far fa-trash-alt" onClick={(e) => this.deleteRow(staffmem._id)}>&nbsp;Delete</button> </td>
                                 

@@ -185,11 +185,11 @@ export default class EditLab_c extends Component {
             <div>
             <br></br>
             <Link to="/labs" className="results">
-            <button className="btn btn-primary" style={{marginLeft:1070,marginBottom:20}}>View All Lab Tests</button> 
+            <button className="btn btn-primary" style={{marginLeft:890,marginBottom:20}}>View All Lab Tests</button> 
             </Link>
             
             <div className='container' align='center'>
-            <form className="form" >
+            <form className="formc" >
                 <div className='form-group' style={{marginBottom:'15px'}}>
                 <h1 className='h3 mb-3 font-weight-normal'style={{textAlign:"center"}}>Update Laboratory Test</h1>
                 <hr></hr>
@@ -243,9 +243,8 @@ export default class EditLab_c extends Component {
                     onChange={this.handleInputChange}>
                     <label style={{marginBottom:'5px',fontWeight: 'bold'}}>Gender</label>
                     <br></br>
-                    <input type="text" value={this.state.gender} name="gender"
-                        className="form-control"
-                        placeholder="Enter Gender" />
+                    <input type="radio" value='Male' name="gender" checked={this.state.gender==='Male'}/> Male &nbsp;  &nbsp;
+                    <input type="radio" value='Female' name="gender" checked={this.state.gender==='Female'}/> Female
                 
                 </div>
 

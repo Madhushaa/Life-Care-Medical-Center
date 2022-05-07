@@ -151,11 +151,11 @@ export default class AddLab_c extends Component {
             <br></br>
 
             <Link to="/labs" className="results">
-            <button className="btn btn-primary" style={{marginLeft:1070,marginBottom:20}}>View All Lab Tests</button>  
+            <button className="btn btn-primary" style={{marginLeft:890,marginBottom:20}}>View All Lab Tests</button>  
             </Link>
             
             <div className='container' align='center'>
-            <form className="form" >
+            <form className="formc" >
                 <div className='form-group' style={{marginBottom:'15px'}}>
                 <h1 className='h3 mb-3 font-weight-normal'style={{textAlign:"center"}}>Request Laboratory Test</h1>
                 <hr></hr>
@@ -312,7 +312,7 @@ export default class AddLab_c extends Component {
                 &nbsp;Save
                 </button>
                 <button className='btn btn-danger' type="submit" style={{marginTop:'25px',marginLeft:'120px',height: '50px', width : '100px'}}>
-                &nbsp;Cancel
+                &nbsp;Clear
                 </button>
         
             </form>

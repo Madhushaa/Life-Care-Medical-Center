@@ -217,13 +217,13 @@ export default class updatePayment extends Component{
       
         <div>
                <Link to="/viewpayment">   
-                          <button className="btn btn-info" style={{marginLeft:830, marginBottom:30}}> View Payment Details</button>
+                          <button className="buttonview" style={{marginLeft:814, marginBottom:30}}> View Payment Details</button>
                </Link>
         </div>
       
         <div  className="container" align="center">
       
-        <div  className= "form">
+        <div  className= "form2">
       
           <div>    
              <h3  style={{textAlign:"center" , marginTop:20}}> <b>Payment Details </b></h3>

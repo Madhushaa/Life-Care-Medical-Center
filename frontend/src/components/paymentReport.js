@@ -44,7 +44,7 @@ class ComponentToPrint extends Component{
         return(
             <div className='container' >
             <div>
-             <h1 style={{textAlign:"center" ,marginBottom:40}}> <b>Pyament Details</b> </h1>
+             <h1 style={{textAlign:"center" ,marginBottom:40}}> <b>Payment Details</b> </h1>
                  <br></br>
                 <hr></hr>
                 <br></br>
@@ -52,11 +52,11 @@ class ComponentToPrint extends Component{
              <table className="table table-striped">
                  <thead>
                     <tr className="table-primary">
-                        <th scope="col">NO </th>
+                        <th style={{width:120}} scope="col">Payment ID </th>
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Appointment Type</th>
-                        <th scope="col">Doctor Specialization</th>
+                        <th style={{width:150}} scope="col">Doctor Specialization</th>
                         <th scope="col">Labtest Name</th>
                         <th scope="col">Amount(LKR)</th>
                         <th scope="col">Date</th>

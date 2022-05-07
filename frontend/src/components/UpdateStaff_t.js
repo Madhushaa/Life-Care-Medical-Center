@@ -47,6 +47,9 @@ export default function Update(){
             setgender(Response.data.staff.gender);
             setrole(Response.data.staff.role);
             setspecialization(Response.data.staff.specialization);
+
+            console.log("Gender : "+Response.data.staff.gender);
+            genderChanged(Response.data.staff.gender);
              
          }).catch(e=>console.log(e));
  
@@ -189,7 +192,7 @@ export default function Update(){
         <div>
            
             <Link to="/view">
-            <button type="stafflist" class="buttonv"style={{marginLeft:370}}>View Staff List</button>
+            <button type="stafflist" class="buttonv"style={{marginLeft:400}}>View Staff List</button>
             </Link>
         </div>
             
