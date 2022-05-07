@@ -128,7 +128,7 @@ export class Example extends React.PureComponent {
         <ReactToPrint content={() => this.componentRef}>
           <PrintContextConsumer>
             {({ handlePrint }) => (
-              <button className="btn btn-info" style={{ marginLeft:'85%',marginTop:'5px'}} onClick={handlePrint}>Generate PDF</button>
+              <button className="btn btn-info" style={{ marginLeft:'85%',marginTop:'5px'}} onClick={handlePrint}><b>Generate PDF</b></button>
 
             )}
           </PrintContextConsumer>

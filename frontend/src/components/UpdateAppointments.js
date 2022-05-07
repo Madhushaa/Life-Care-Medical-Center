@@ -103,13 +103,16 @@ export default class UpdateAppointments extends Component{
 
 render(){
     return(
-
+        
         <div style={{backgroundImage: `url(${background})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundPosition:'center',backgroundAttachment:'fixed'}}>            
     
         <div className ="container" >
-
+<br></br>
+        <Link to="/viewAppointments" className="">                
+        <button className="btn btn-primary" type='submit' style={{marginLeft:'545px', marginBottom:'30px', height:'45px'}}> View All Appointments </button>
+    </Link>
             <br></br>
-            <form  className="form" style={{backgroundColor:'#ffff',padding:'30px 30px',width:'650px',marginLeft:'80px '}}  > 
+            <form  className="form1" style={{backgroundColor:'#ffff',padding:'30px 30px',width:'650px',marginLeft:'80px '}}  > 
                 <h1 style={{textAlign:'center'}}>Update Appointment </h1> <hr></hr>
 
                 <div className="form-group row g-3">
@@ -158,7 +161,7 @@ render(){
                         <div className="col-auto">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender" id="Male" 
-                                    value={this.state.gender}
+                                    value={this.state.gender} checked={this.state.gender == 'Male'}
                                     onChange={this.handleInputChange}/>
                                 <label class="form-check-label"  for="flexRadioDefault1"> Male </label>
                             </div>
@@ -168,7 +171,7 @@ render(){
                         <div className="col-auto">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender" id="Female" 
-                                    value={this.state.gender}
+                                    value={this.state.gender} checked={this.state.gender == 'Female'}
                                     onChange={this.handleInputChange} />
                                 <label class="form-check-label"  for="flexRadioDefault1"> Female</label>
                             </div>

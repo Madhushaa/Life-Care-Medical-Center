@@ -7,8 +7,8 @@ function StaffDash(props){
 
         <div className='' >
 
-            <br></br><br></br>
-            <h2 className="text-center">Staff Management</h2>
+            <br></br>
+            <h2 className="text-center"><b>Staff Management</b></h2>
             <br></br><br></br><br></br>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style={{marginLeft:200}}>"

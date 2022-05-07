@@ -344,7 +344,7 @@ export default class EditLab_c extends Component {
                 </div>
 
 
-                <button className='btn btn-success' type="submit" style={{marginTop:'25px',marginLeft:'240px',height: '50px', width : '100px'}} onClick={this.onSubmit}>
+                <button className='btn btn-success' type="submit" style={{marginTop:'25px',marginLeft:'150px',height: '50px', width : '100px'}} onClick={this.onSubmit}>
                 &nbsp;Update
                 </button>
                

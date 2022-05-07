@@ -146,10 +146,10 @@ export default function AddAppointments  ()  {
     <br></br>
 
     <Link to="/viewAppointments" className="">                
-        <button className="btn btn-primary" type='submit' style={{marginLeft:'545px', marginBottom:'30px', height:'45px'}}> View All Appointments </button>
+        <button className="btn btn-primary" type='submit' style={{marginLeft:'545px', marginBottom:'30px'}}> View All Appointments </button>
     </Link>
       
-    <form  className="form" style={{backgroundColor:'#ffff',padding:'30px 30px',width:'650px',marginLeft:'80px '}}  onSubmit={sendData} >
+    <form  className="form1" style={{backgroundColor:'#ffff',padding:'30px 30px',width:'650px',marginLeft:'80px '}}  onSubmit={sendData} >
 
       <h1 style={{textAlign:'center'}}>Add an Appointment </h1> <hr></hr>
 
